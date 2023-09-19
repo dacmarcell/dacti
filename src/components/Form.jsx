@@ -3,15 +3,56 @@ import { useForm, ValidationError } from '@formspree/react';
 
 import DefaultButton from './DefaultButton';
 
-function ContactForm() {
+const ifContent = {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+}
+
+const ifh3 = {
+  backgroundColor: 'white',
+  width: 300,
+  padding: 30,
+  color: 'black',
+  borderRadius: 30
+}
+
+const container = {
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+}
+
+const input = {
+  width: 600,
+  height: 40,
+  marginBottom: 30,
+  borderRadius: 20,
+  fontSize: 20,
+}
+
+const textarea = {
+  width: 600,
+  height: 90,
+  borderRadius: 20,
+  fontSize: 20,
+  marginBottom: 30,
+}
+
+export default function ContactForm() {
   const [state, handleSubmit] = useForm("mleywdnj");
 
   if (state.succeeded) {
-    return <h3>Obrigado por enviar sua mensagem! Nossa equipe em breve te enviará um e-mail de resposta no e-mail informado no formulário!</h3>;
+    return (
+      <div style={ifContent}>
+        <h3 style={ifh3}>Obrigado por enviar sua mensagem! Nossa equipe em breve te enviará um e-mail de resposta no e-mail informado no formulário!</h3>
+      </div>
+    )
   }
   return (
     <form onSubmit={handleSubmit}>
-      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+      <div style={container}>
         <label htmlFor="email">
           <p>Insira seu melhor e-mail:</p>
         </label>
@@ -19,7 +60,8 @@ function ContactForm() {
           id="email"
           type="email"
           name="email"
-          style={{ width: 600, height: 30, marginBottom: 30, borderRadius: 20, textAlign: 'center', fontSize: 20 }}
+          style={input}
+          required
         />
         <ValidationError
           prefix="Email"
@@ -30,7 +72,8 @@ function ContactForm() {
         <textarea
           id="message"
           name="message"
-          style={{ width: 600, height: 90, borderRadius: 20, textAlign: 'center', fontSize: 20, marginBottom: 30, }}
+          style={textarea}
+          required
         />
         <ValidationError
           prefix="Message"
@@ -42,9 +85,3 @@ function ContactForm() {
     </form>
   );
 }
-function App() {
-  return (
-    <ContactForm />
-  );
-}
-export default App;

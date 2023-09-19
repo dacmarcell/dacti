@@ -5,6 +5,7 @@ import Servicos from '../pages/Servicos';
 import Projetos from '../pages/Projetos';
 import Orcamentos from '../pages/Orcamentos';
 import Contato from '../pages/Contato';
+import Privacidade from "../pages/Privacidade";
 
 export default function Router() {
   return (
@@ -14,6 +15,7 @@ export default function Router() {
       <Route path='/projetos' element={<Projetos />} />
       <Route path='/orcamentos' element={<Orcamentos />} />
       <Route path='/contato' element={<Contato />} />
+      <Route path='/privacidade' element={<Privacidade />} />
     </Routes>
   )
 }

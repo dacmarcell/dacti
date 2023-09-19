@@ -24,7 +24,7 @@ export default function Header() {
       <a href='/'><img src='./logo.png' /></a>
       <Link style={style} to='/servicos'>Nossos Serviços</Link>
       <Link style={style} to='/projetos'>Nossos Projetos</Link>
-      <Link style={style} to='/orcamentos'>Orçamento</Link>
+      <Link style={style} to='/orcamentos'>Orçamentos</Link>
       <Link style={style} to='/contato'>Contato</Link>
     </div>
   )

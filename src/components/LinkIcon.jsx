@@ -3,7 +3,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 
 const links = {
   github: 'https://github.com/marcelldac',
-  linkedin: 'https://www.linkedin.com/in/marcelldactes/',
+  linkedin: 'https://www.linkedin.com/in/marcell-dactes-23b384294/',
   mailto: 'mailto:dacmarcell@gmail.com.br',
 };
 

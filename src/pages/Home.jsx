@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <BgImg />
       <Products />
-      <DefaultButton to='/servicos' text='Veja todos os serviços!'/>
+      <DefaultButton to='/servicos' text='Veja todos os serviços!' />
     </div>
   )
 }

@@ -49,7 +49,7 @@ function Marker({ children, ...props }) {
 }
 
 const Loader = () => {
-  return <h1>Loading...</h1>
+  return <h1>Carregando...</h1>
 }
 
 export default function Projetos() {

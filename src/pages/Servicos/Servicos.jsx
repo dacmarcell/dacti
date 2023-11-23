@@ -22,10 +22,11 @@ function Content() {
   useFrame(() => (ref.current.rotation.x = ref.current.rotation.y = ref.current.rotation.z += 0.004))
   return (
     <group ref={ref}>
-      <Dodecahedron position={[-2, 0, 0]} title="Webapps como esse!" />
-      <Dodecahedron position={[0, -2, -3]} title="Aplicativos para celular!" />
-      <Dodecahedron position={[2, 0, 0]} title="Aplicativos para desktop!" />
-      <Dodecahedron position={[2, -3, -2]} title="Seu Projeto Personalizado!" />
+      <Dodecahedron position={[-2, 0, 0]} title="Webapps!" />
+      <Dodecahedron position={[0, -2, -3]} title="Aplicativos Mobile" />
+      <Dodecahedron position={[3, 0, 0]} title="Aplicativos Desktop!" />
+      <Dodecahedron position={[-2, -3, -2]} title="Websites!" />
+      <Dodecahedron position={[1, -1, 2]} title="Softwares em geral!" />
     </group>
   )
 }

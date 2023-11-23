@@ -1,4 +1,4 @@
-import { Route, Routes, HashRouter } from 'react-router-dom'
+import { Route, BrowserRouter, Routes } from 'react-router-dom'
 
 import Home from '../pages/Inicio/Home'
 import Servicos from '../pages/Servicos/Servicos'
@@ -6,12 +6,12 @@ import Projetos from '../pages/Projetos/Projetos'
 
 export default function Navigation() {
   return (
-    <HashRouter future={{ v7_startTransition: true }}>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/servicos" element={<Servicos />} />
-        <Route path="/projetos" element={<Projetos />} />
+        <Route path="/" Component={Home} />
+        <Route path="/servicos" Component={Servicos} />
+        <Route path="/projetos" Component={Projetos} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   )
 }

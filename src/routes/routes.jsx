@@ -6,7 +6,7 @@ import Projetos from '../pages/Projetos/Projetos'
 
 export default function Navigation() {
   return (
-    <HashRouter>
+    <HashRouter future={{ v7_startTransition: true }}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/servicos" element={<Servicos />} />

@@ -1,21 +1,17 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, BrowserRouter as Router } from 'react-router-dom'
 
-import Home from '../pages/Home';
-import Servicos from '../pages/Servicos';
-import Projetos from '../pages/Projetos';
-import Orcamentos from '../pages/Orcamentos';
-import Contato from '../pages/Contato';
-import Privacidade from "../pages/Privacidade";
+import Home from '../pages/Inicio/Home'
+import Servicos from '../pages/Servicos/Servicos'
+import Projetos from '../pages/Projetos/Projetos'
 
-export default function Router() {
+export default function Navigation() {
   return (
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/servicos' element={<Servicos />} />
-      <Route path='/projetos' element={<Projetos />} />
-      <Route path='/orcamentos' element={<Orcamentos />} />
-      <Route path='/contato' element={<Contato />} />
-      <Route path='/privacidade' element={<Privacidade />} />
-    </Routes>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/servicos" element={<Servicos />} />
+        <Route path="/projetos" element={<Projetos />} />
+      </Routes>
+    </Router>
   )
 }

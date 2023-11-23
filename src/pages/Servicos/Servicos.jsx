@@ -35,7 +35,7 @@ export default function Servicos({}) {
 
   return (
     <>
-      <h2 onClick={() => navigate('/')}>
+      <h2 className="goBackIcon" onClick={() => navigate('/')}>
         <IoCaretBack />
       </h2>
       <Canvas camera={{ position: [0, 0, 7.5] }}>

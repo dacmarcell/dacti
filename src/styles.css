@@ -34,16 +34,13 @@ h1 {
   text-align: left;
 }
 
-h2 {
-  top: 120px;
-  left: 60px;
-  font-weight: 900;
+.goBackIcon {
+  cursor: pointer;
   font-size: 5em;
   margin: 0;
   color: #8c3412;
-  line-height: 0.6em;
-  letter-spacing: -2px;
-  text-align: left;
+  width: 5%;
+  height: 10%;
 }
 
 h1 > span {

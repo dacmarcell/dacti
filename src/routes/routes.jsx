@@ -2,7 +2,7 @@ import { Route, Routes, BrowserRouter as Router } from 'react-router-dom'
 
 import Home from '../pages/Inicio/Home'
 import Servicos from '../pages/Servicos/Servicos'
-import Projetos from '../pages/Projetos'
+import Projetos from '../pages/Projetos/Projetos'
 import Contato from '../pages/Contato'
 
 export default function Navigation() {

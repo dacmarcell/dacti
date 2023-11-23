@@ -1,7 +1,7 @@
-export default function Projetos() {
+export default function Projects() {
   return (
-    <>
-      <h1>Projetos</h1>
-    </>
+    <div>
+      <h1>Projects</h1>
+    </div>
   )
 }

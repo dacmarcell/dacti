@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Loader, useGLTF, OrbitControls, PerspectiveCamera, Stars } from '@react-three/drei'
+import { LinkContainer } from 'react-router-bootstrap'
 
 function Model({ url }) {
   const { nodes } = useGLTF(url)
@@ -40,6 +41,9 @@ export default function Home() {
       </Canvas>
       <div className="layer" />
       <Loader />
+      <LinkContainer to="/servicos">
+        <button>Nossos Serviços.</button>
+      </LinkContainer>
       <a href="/servicos" className="top-left" children="Nossos Serviços." />
       <a href="/projetos" className="top-right" children="Nossos Projetos." />
       <a href="https://www.linkedin.com/in/marcell-dactes/" className="bottom-left" children="Conheça o idealizador do projeto." target="_blank" />
